@@ -18,7 +18,7 @@ List with soft and tech:
 - How to write complex code logic
 - Needed hardware for web development: laptop or desctop
 - Basc Linux commands and tools
-- Local, Dev, Stage, Prod ENV: local installed software, docker  containers, Virtual Machines, Cloud test accounts
+- Local, Dev, Stage, Prod ENV: local installed software, [docker/podman containers](docker-podman-containers.md), Virtual Machines, Cloud test accounts
 - CI/CD (Continuous Integration/Continuous Deployment) is the practice of automating building, testing, and deployment of applications
 - ChatGPT3 and AI tools for code generations and text prompting
 - How to bechmark code or websites
@@ -33,3 +33,4 @@ Advanced topics:
 - Programming paradims
 - Design principles: KISS, YAGNI, SOLID,
 - System Design: Cahing, Scaling and Monitoring. How big websites work: Facebook, Youtube, TikTok, Stackoverflow and many more.
+- [Bad practices and real world examples](Bad-practices-and-real-world-examples.md)

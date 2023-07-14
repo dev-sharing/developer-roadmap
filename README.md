@@ -1,6 +1,6 @@
 # Developer-roadmap
 
-Notice: this e-book is stil in draft mode.
+Notice: this e-book is still in draft mode. It will be very hard to cover all aspects of programming and related live with him, but at least this book will save you a lot of time and efforts :)
 
 List with soft and tech:
 - Needed skills so secome a programmer

@@ -2,8 +2,10 @@
 
 Notice: this e-book is still in draft mode. It will be very hard to cover all aspects of programming and related live with him, but at least this book will save you a lot of time and efforts :)
 
+
 List with soft and tech:
-- Needed skills so secome a programmer
+- Needed skills to become a programmer
+- Needed hardware equipment and system requirements: determine budget, laptop vs desctop, ergonomic habits and work space
 - Learning curve diagram
 - Text editor
 - HTML

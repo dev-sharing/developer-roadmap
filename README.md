@@ -7,6 +7,7 @@ List with soft and tech:
 - Needed skills to become a programmer
 - Needed hardware equipment and system requirements: determine budget, laptop vs desctop, ergonomic habits and work space
 - Learning curve diagram
+- Body, food, sleep and mental health
 - Text editor
 - HTML
 - CSS
@@ -18,7 +19,6 @@ List with soft and tech:
 - Databases: flat file  DB, MySQL, PostgreSQL, ORMs
 - How to research for error messages
 - How to write complex code logic
-- Needed hardware for web development: laptop or desctop
 - Basc Linux commands and tools
 - Local, Dev, Stage, Prod ENV: local installed software, [docker/podman containers](docker-podman-containers.md), Virtual Machines, Cloud test accounts
 - CI/CD (Continuous Integration/Continuous Deployment) is the practice of automating building, testing, and deployment of applications
@@ -36,3 +36,19 @@ Advanced topics:
 - Design principles: KISS, YAGNI, SOLID,
 - System Design: Cahing, Scaling and Monitoring. How big websites work: Facebook, Youtube, TikTok, Stackoverflow and many more.
 - [Bad practices and real world examples](Bad-practices-and-real-world-examples.md)
+
+
+
+How to find first job
+
+Freelancing and contractor job
+
+Interpeneurship and Start-up:
+- List with recources: presentations, podcasts, real world examples, how to find entrepreneurship communities
+- Collecting and finding a promising idea.
+- Market fit.
+- Competition.
+- Scalable business.
+- Creating a team.
+- Build MVPs
+- Raise money with venture capital.

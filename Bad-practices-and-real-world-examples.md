@@ -16,7 +16,13 @@ Sources:
 ## Miscrosoft Windows
 - Commit personal phone number(internet for debug purposes only) and receive calls from all over the world :) [Inside Task Manager with the Original Author](https://youtu.be/Ve95Nh690l0)
 
-- ## Amazon
+
+## PayPal
+1991 [This is the story of a catastrophic software bug I briefly introduced into the PayPal codebase that almost cost us the company (or so it seemed, in the moment.) ](https://max.levch.in/post/724289457144070144/shamir-secret-sharing-its-3am-paul-the-head-of)
+
+
+
+## Amazon
 
 - 2023 Jul [I'm so pissed. Ordered T480 from Amazon and got fucking kitty litter instead. Just called Amazon and they can't even order a replacement for me. ](https://www.reddit.com/r/thinkpad/comments/14yv7qv/this_was_supposed_to_be_a_t480/)
 - 2023 Jul [Ordered a singular 1TB MicroSD card on Amazon to upgrade my decks storage…](https://www.reddit.com/r/SteamDeck/comments/14xlbde/ordered_a_singular_1tb_microsd_card_on_amazon_to/)

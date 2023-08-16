@@ -36,7 +36,7 @@ Advanced topics:
 - Design principles: KISS, YAGNI, SOLID,
 - System Design: Cahing, Scaling and Monitoring. How big websites work: Facebook, Youtube, TikTok, Stackoverflow and many more.
 - [Bad practices and real world examples](Bad-practices-and-real-world-examples.md)
-
+- [The battle of programming languages](the-battle-of-programming-languages.md)
 
 
 How to find first job

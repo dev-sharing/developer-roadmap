@@ -2,6 +2,18 @@
 
 Examples related with programmers mistakes
 
+## Github.com
+
+### 2018 October 21
+![](https://github.blog/wp-content/uploads/2018/10/invalid-topology.png?resize=1700%2C1350)
+- [In-depth analysis of the incident that impacted GitHub services on October 21 and 22. - https://github.blog/2018-10-30-oct21-post-incident-analysis/](https://github.blog/2018-10-30-oct21-post-incident-analysis/)
+
+Related:
+- [Youtube.com video from Kevin Fang: How GitHub's Database Self-Destructed in 43 Seconds](https://youtu.be/dsHyUgGMht0)
+- [https://github.blog/2017-10-12-evolution-of-our-data-centers](https://github.blog/2017-10-12-evolution-of-our-data-centers/)
+- [https://github.blog/2018-06-20-mysql-high-availability-at-github/](https://github.blog/2018-06-20-mysql-high-availability-at-github/)
+- [https://github.blog/2018-06-20-mysql-high-availability-at-github/](https://github.blog/2018-06-20-mysql-high-availability-at-github/)
+
 
 ## GitLab.com
 

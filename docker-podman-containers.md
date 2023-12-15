@@ -1,6 +1,64 @@
 
 # Docker
 
+install docker on Debian server.
+Docker provides a convenience script at https://get.docker.com/ to install Docker into development environments 
+non-interactively. 
+The convenience script isn't recommended for production environments, but it's useful for creating a 
+provisioning script tailored to your needs. 
+source: https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script
+```
+# https://github.com/docker/docker-install
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+
+sudo usermod -aG docker developer
+# reboot system !
+```
+
+## Installing docker-compose
+Dockerfile vs Docker compose:
+A Dockerfile is a text document with a series of commands used to build a Docker image. 
+Docker Compose is a tool for defining and running multi-container applications
+```sh
+curl -s https://api.github.com/repos/docker/compose/releases/latest | grep browser_download_url  | grep docker-compose-linux-x86_64 | cut -d '"' -f 4 | wget -qi -
+
+chmod +x docker-compose-linux-x86_64
+sudo mv docker-compose-linux-x86_64 /usr/local/bin/docker-compose
+
+docker-compose version
+```
+
+```sh
+./files/docker-containers/postgresql-pg-admin/
+mkdir docker-containers
+cd docker-containers/
+mkdir postgresql-pg-admin
+touch docker-compose.yml
+nano docker-compose.yml
+# "Ctrl + C" , then pres "Y"
+
+#
+docker-compose up
+
+# to stop current running conainer from docker-compose command
+# use shortcut "Ctrl + C" 
+
+# start dcoker-compose.yml file from current directory in deatach mode(in background)
+docker-compose up -d
+
+
+
+
+# stop running containers from wcurrent directory
+docker-compose down
+
+docker ps
+
+```
+
+
+
 
 
 # WSL2 (Windows Subsystem for Linux) 

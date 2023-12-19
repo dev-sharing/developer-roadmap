@@ -16,11 +16,11 @@ List with soft and tech:
 - How Internet works: IP addresses, LAN
 - Version Control System with Git
 - Markdown files(.md) and how to document our code. Private wikipedia with code snippets
-- Databases: flat file  DB, MySQL, PostgreSQL, ORMs
+- Databases: flat file  DB, MySQL, PostgreSQL, ORMs, [Vector Databases](vector-databases.md)
 - How to research for error messages
 - How to write complex code logic
 - Basc Linux commands and tools
-- Local, Dev, Stage, Prod ENV: local installed software, [docker/podman containers](docker-podman-containers.md), Virtual Machines, Cloud test accounts
+- Local, Dev, Stage, Prod ENV: local installed software, [docker/podman containers](docker-podman-containers.md), [Virtual Machines](virtual-machines-vms.md), Cloud test accounts
 - CI/CD (Continuous Integration/Continuous Deployment) is the practice of automating building, testing, and deployment of applications
 - ChatGPT3 and AI tools for code generations and text prompting
 - How to bechmark code or websites

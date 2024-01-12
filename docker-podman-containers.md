@@ -1,13 +1,15 @@
 
 # Docker
 
+Dev Sharing video tutorial: [Debian server how to install docker with bash script the fast variant](https://youtu.be/mLj0_0KCgtc)
+
 install docker on Debian server.
 Docker provides a convenience script at https://get.docker.com/ to install Docker into development environments 
 non-interactively. 
 The convenience script isn't recommended for production environments, but it's useful for creating a 
 provisioning script tailored to your needs. 
 source: https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script
-```
+```sh
 # https://github.com/docker/docker-install
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
@@ -17,6 +19,9 @@ sudo usermod -aG docker developer
 ```
 
 ## Installing docker-compose
+
+Dev Sharing video tutorial: [Debian server how to install docker compose and run PostgreSQL and PgAdmin from .yml file](https://youtu.be/iHIXpWrBt_A)
+
 Dockerfile vs Docker compose:
 A Dockerfile is a text document with a series of commands used to build a Docker image. 
 Docker Compose is a tool for defining and running multi-container applications

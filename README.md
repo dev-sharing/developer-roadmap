@@ -14,7 +14,7 @@ List with soft and tech:
 - JavaScript
 - How Websites works and NodeJS web server. ExpressJS
 - How Internet works: IP addresses, LAN
-- Version Control System with Git
+- [Version Control System with Git. Guthub.com and GitLab](git-github.md)
 - Markdown files(.md) and how to document our code. Private wikipedia with code snippets
 - Databases: flat file  DB, MySQL, PostgreSQL, ORMs, [Vector Databases](vector-databases.md)
 - How to research for error messages

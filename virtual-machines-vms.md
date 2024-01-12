@@ -1,9 +1,35 @@
 # VirtualBox
 
+## How to install Debian 12.1 server on VirtualBox under Windows 10
+Vido tutorial: [How to install Debian 12 1 server on VirtualBox under Windows 10](https://youtu.be/5SBj0VYWpJE)
+
+Visit Debian download page [www.debian.org/CD/netinst/](https://www.debian.org/CD/netinst/)
+
+## How to install Debian 12.1 server on VirtualBox under Windows 10 part 2
+
+Video tutorial: [How to install Debian 12.1 server on VirtualBox under Windows 10 part 2](https://youtu.be/GIux_IcUESc)
+
+```sh
+# chake current IP LAN address
+ip a
+
+# ssh login example
+ssh developer@192.168.1.207
+
+```
+
+## How to install Debian 12.1 server on VirtualBox under Windows 10 part 3
+
+Video tutorial: [How to install Debian 12.1 server on VirtualBox under Windows 10 part 3](https://youtu.be/qVbwLyB0sJc)
+
+![](./files/How-to-install-Debian-12.1-server-on-VirtualBox-under-Windows-10-part-3-home-cloud-servers-diagram-02.png)
+
+[ExcaliDraw file with diagram ](./files/VirtuaBox-network-bridged-adapter-001.excalidraw)
+
 
 ## Export Virtual Machine to .OVA File in Oracle VM VirtualBox
 
-Vido tutorial variant: [https://youtu.be/EYlVYd7xgiE](https://youtu.be/EYlVYd7xgiE)
+Video tutorial variant: [https://youtu.be/EYlVYd7xgiE](https://youtu.be/EYlVYd7xgiE)
 
 Open VirtualBox , select wnated virtual machine and pres right mouse click
 ![](./files/virtualBox-export-ova-file-001.png)

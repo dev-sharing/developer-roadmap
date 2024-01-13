@@ -59,8 +59,141 @@ docker-compose up -d
 docker-compose down
 
 docker ps
+```
+
+# How to mount remote directory and files for Debian server and from Nemo or VSCode
+
+![](./files/How-to-mount-remote-directory-and-files-for-debian-server-and-from-Nemo-or-VSCode.png)
+
+[Excalidraw file](./files/How-to-mount-remote-directory-and-files-for-debian-server-and-from-Nemo-or-VSCode.excalidraw)
+
+Dev Sharing video tutorial: [How to mount remote directory and files for Debian server and from Nemo or VSCode](https://youtu.be/pn08_TjsR1g)
+
+
+Nemo File Explorer -> Connect to Server:
+![](./files/nemo-connect-to-server-via-ssh-mount-01.png)
+
+Nemo File Explorer -> Network tab wit mounted remote Home directory:
+![](./files/nemo-connect-to-server-via-ssh-mount-02.png)
+
+
+# Portainer
+
+## Install and Configure Portainer
+
+https://docs.portainer.io/
+
+These installation instructions are for Portainer Community Edition (CE).
+https://docs.portainer.io/start/install-ce/server/docker/linux
+
+
+By default, Portainer generates and uses a self-signed SSL certificate to secure port 9443
+```sh
+# create a persistent volume for your data
+docker volume create portainer_data
+
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+```
+
+variant with  docker-compose.yml file:
+```yml
+version: '3.3'
+
+volumes:
+  portainer-data:
+    driver: local
+services:
+  app:
+    container_name: portainer
+    image: portainer/portainer-ce:latest
+    ports:
+      - 8000:8000
+      - 9443:9443
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer-data:/data
+    restart: always
+```
+The value of the --restart flag can be any of the following:
+
+- no Do not automatically restart the container. (the default)
+
+- on-failure Restart the container if it exits due to an error, which manifests as a non-zero exit code.
+
+- always Always restart the container if it stops. If it is manually stopped, it is restarted only when Docker daemon restarts or the container itself is manually restarted.
+
+- unless-stopped Similar to always, except that when the container is stopped (manually or otherwise), it is not restarted even after Docker daemon restarts.
+
+
+## on error (Optional step):
+```
+docker: Error response from daemon: Conflict. The container name "/portainer" is already in use by
+```
+remove old container :
+> docker container rm -f portainer
+
+
+in still not work see logs for more info:
+```sh
+2023/06/08 10:11AM FTL github.com/portainer/portainer/api/datastore/migrator/migrate_ce.go:101 > the Portainer database 
+is set for Portainer Business Edition, please follow the instructions in our documentation to downgrade it: 
+https://documentation.portainer.io/v2.0-be/downgrade/be-to-ce/
+```
+run command:
+```sh
+docker run -it --name portainer-database-rollback -v portainer_data:/data portainer/portainer-ee:latest --rollback-to-ce
+```
+download portainer image and start container in deatach mode
+```sh
+docker-compose up -d
+```
+
+open in browser: [https://localhost:9443](https://localhost:9443)
+for remote server [https://192.168.1.207:9443](https://192.168.1.207:9443)
 
 ```
+user: admin
+# some example pass
+pass: portainer.io.pass
+```
+
+# Prometheus and Grafana for Server Monitoring
+
+## Prometheus
+
+Prometheus pull all metrics from servers
+
+https://prometheus.io/docs/prometheus/latest/installation/
+
+
+### Exporters - integration with other software
+https://prometheus.io/docs/instrumenting/exporters/
+
+## Grafana
+
+
+https://grafana.com/docs/grafana/latest/
+
+for docker container 
+https://grafana.com/docs/grafana/latest/setup-grafana/installation/docker/
+
+### Dashboards
+https://grafana.com/grafana/dashboards/
+
+Use for example:
+https://grafana.com/grafana/dashboards/1860-node-exporter-full/
+
+press button "Copy to clipboard" this will copy ID for this dashboard: "1860"
+
+https://grafana.com/grafana/dashboards/14282-cadvisor-exporter/
+
+## cAdvisor 
+![](https://github.com/google/cadvisor/raw/master/logo.png)
+
+cAdvisor (Container Advisor) provides container users an understanding of the resource usage and performance characteristics of their running containers. It is a running daemon that collects, aggregates, processes, and exports information about running containers. Specifically, for each container it keeps resource isolation parameters, historical resource usage, histograms of complete historical resource usage and network statistics. This data is exported by container and machine-wide
+
+https://github.com/google/cadvisor
+
 
 
 
